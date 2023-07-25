@@ -5,6 +5,9 @@ public class CaesarCipher {
 
         for(int i=0; i<plaintext.length(); i++){
             char c = plaintext.charAt(i); // retrieve original character
+            if ((c > 'z' - key && c <= 'z') || (c > 'Z' - key && c <= 'Z')) {
+                c = (char)(c - 26);
+            }
             c = (char)(c + key); // transform original character
             ret = ret + c; // append transformed character to final string
         }
@@ -16,6 +19,7 @@ public class CaesarCipher {
         System.out.println();
         System.out.println("------------------------------------------");
         System.out.println();
+        System.out.println("(to avoid errors only enter letters)");
         System.out.println("Enter the text to encrypt:");
         String plaintext = scanner.nextLine();
         System.out.println();
