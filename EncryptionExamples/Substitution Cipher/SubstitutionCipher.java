@@ -63,7 +63,7 @@ public class SubstitutionCipher
      (although we still essentially have a nested loop, because replace
       uses a loop underneath)
      Pros: Very fast to write!
-     Cons: To be determined in class.
+     Cons: Doesn't work
    */
   public static String encryptSubstitutionV3(String plaintext, char[] original, char[] transformed)
   {
@@ -71,7 +71,7 @@ public class SubstitutionCipher
     
     for(int i=0; i<original.length; i++)
     {
-      ret.replace(original[i], transformed[i]);
+      ret = ret.replace(original[i], transformed[i]);
     }
     
     return ret;
