@@ -1,0 +1,18 @@
+Substitution Ciphers
+"Arbitrary" Substitution
+We can define the cipher to transform any symbol into another symbol.
+
+For example, we can define the cipher to transform the letter "a" into the letter "d", the letter "b" into the letter "q", and so on. 
+This is called an arbitrary substitution cipher. The following is an example of an arbitrary substitution cipher:
+A -> D
+D -> A
+...
+B -> Q
+C -> E
+E -> B
+Q -> C
+...
+Z -> Z
+& -> &
+
+This isn't giberish, it still has a pattern to decrypt it. We still need to make sure that each letter is only used exactly once.
