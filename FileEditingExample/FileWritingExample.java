@@ -15,6 +15,7 @@ public class FileWritingExample {
             System.out.println();
             writer.println(in.nextLine());
             writer.close();
+            in.close();
         } catch (Exception e) {
             System.out.println();
             System.out.println("------------------------------------------");
