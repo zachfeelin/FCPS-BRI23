@@ -1,0 +1,29 @@
+Encryption - changing how information looks to ward off unwanted resipiants, or hackers, from reading it.
+
+How long has it been around?
+Thousands of years! See: Caesar Cipher
+
+How does it work?
+There are many different types of encryption, but the most common is called symmetric encryption. 
+This is where the sender and receiver both have the same key, or password, to encrypt and decrypt the message. 
+The sender encrypts the message, and the receiver decrypts it. The key is the same for both of them.
+
+For example if the encryption key is 3, then the letter A would become D, B would become E, and so on.
+A -> D
+B -> E
+C -> F
+D -> G
+...
+W -> Z
+X -> A
+Y -> B
+Z -> C
+and so on...
+
+Here's an example:
+message   - "Hello World"
+key       -       3
+encrypted - "Khoor Zruog"
+
+Modern industry standard encryption for the internet is called AES, aka Advanced Encryption Standard
+                                                            or RSA, aka Rivest-Shamir-Adleman
