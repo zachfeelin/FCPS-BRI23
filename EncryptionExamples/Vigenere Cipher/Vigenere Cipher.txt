@@ -1,0 +1,18 @@
+Vigenere Cipher
+
+plain: HELLO
+key:   CTY
+A = 0
+B = 1
+...
+Z = 25
+
+Cipher:
+O = 14
+T = 19
+33 - 26 = 7
+
+H E L L O
+C T Y C T
+-----
+J X J N H
