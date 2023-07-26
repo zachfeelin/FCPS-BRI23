@@ -1,0 +1,47 @@
+Strategies for conpression
+
+_____________________________________________________________________________________________________________________
+
+
+1. Indentiy sequences of consecutively repeated symbols
+
+Example: instead of storeing each 100000 of the same character individually,
+just say "there are 100000 of these"
+
+------------------------------------------------------------------------------------------
+
+2. How many words in English?
+100000? 400000? 600000?
+
+Let's say upper bound of 1000000, this means we need at least 20 bits to store each word
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+Compare to ASCII?
+Document contains 10000 words. How many characters in that document?
+
+~47000 characters, so 57000 including spaces
+57000 bytes with ASCII
+25000 bytes with our proposed method above
+
+BUT you also need to store the key
+1000000 words stored in ASCII somewhere on your computer      ~5,700,000 bytes
+
+------------------------------------------------------------------------------------------
+
+3. Only make a key for the unique words presemt in the document.
+Useful if your document has 50000 words, but only 1000 unique words
+You then write 1000 words in plaintext, and 50000 in a compressed 10-bit version
+
+-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+ASCII: ay least 50000*6 = 300000 bytes
+Our method: 1000*5 bytes + 50000*10 bits
+5000 + 62500 = 67500 bytes
+
+Hidden advantages over previous method:
+- Slang words
+- Typos
+- Abbreviations
+- Names
+- Words not in the dictionary
