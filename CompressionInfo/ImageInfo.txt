@@ -1,0 +1,36 @@
+00000000
+00100100
+01000010
+00111100
+^ bitmap looks like this
+
+
+40 pixles * 32 bits per pixel = 1280 bits for the image
+
+14MB vs 240KB --------- wolf image
+14MB - should be
+240KB - reality
+Thanks compression!
+
+___________________________IMAGE TYPES___________________________
+
+
+GIF - Graphics Interchange Format (probably) 
+  used to be copyright-ed, or proprietary
+  applies compression to the image
+
+PNG - Portable Network Graphics 
+  non-proprietary version of GIF
+  applies **lossLESS** compression to the image
+
+JPG or JPEG - Joint Photographic (Experts) Group
+  applies **LOSSY** compression
+
+BMP - Bitmap
+  uncompressed file format
+
+TIFF - uncompressed
+
+Vector formats -  Uses vertors (line segments)
+  Constructed of lines, not pixels
+  Uses math to construct the image
