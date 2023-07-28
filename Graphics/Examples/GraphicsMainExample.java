@@ -14,7 +14,7 @@ public class GraphicsMainExample
   public static void main(String[] args)
   { 
     // Initialize the window
-    JFrame frame = new JFrame();
+    JFrame frame = new JFrame("Graphics Examples");
 
     // Set the width and height of the window in pixels
     frame.setSize(1900,1000);
